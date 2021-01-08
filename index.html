@@ -5,10 +5,93 @@
   <title>Titre de la page</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/fccb76fc09.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  ...<p>Premier projet</p>
+	<div id="bloc_page">
+		<header>
+			<div id="logo">
+				<img src="Projet 2 - Reservia/images/logo/Reservia@3x.png" alt="logo reservia" />
+			</div>
+				<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+				<p>En plein centre ville ou en pleine nature</p>
+			
+			<nav>
+				<ul>
+					<li><a href="#">Hébergement</a></li>
+					<li><a href="#">Activités</a></li>
+					<li><a href="#">S'inscrire</a></li>
+				</ul>
+			</nav>
+			
+			<form method="post" action="traitement.php">
+				<p>
+					<label for="recherche"><i class="fas fa-map-marker-alt"></i></label>
+					<input type="text" name="Recherche" value="Marseille,France">
+				</p>
+			</form>
+		</header>
+
+		<div id="filtres">
+			<ul>
+				<li><a href="#">Filtres</a></li>
+				<li><a href="#">Economique</a></li>
+				<li><a href="#">Familial</a></li>
+				<li><a href="#">Romantique</a></li>
+				<li><a href="#">Animaux autorisés</a></li>
+			</ul>
+
+		<section>
+			<div id="hebergement">
+				<h1>Hébgergement à Marseille</h1>
+				<div class="premiere_img">
+					<p><img src="Projet 2 - Reservia/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannabière" height="100px" width="150px" /><img src="Projet 2 - Reservia/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port" height="100px" width="150px" /><img src="Projet 2 - Reservia/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel les mouettes" height="100px" width="150px" /></p>
+				</div>
+				<div class="deuxieme_img">
+					<p><img src="Projet 2 - Reservia/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer" height="100px" width="150px" /><img src="Projet 2 - Reservia/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge le Panier" height="100px" width="150px" /><img src="Projet 2 - Reservia/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina" height="100px" width="150px" /></p>
+				</div>
+			</div>
+			<aside>
+				<h1>Les plus populaires</h1>
+				<div class="populaires">
+					<p><img src="Projet 2 - Reservia/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel le soleil du matin" height="100px" width="150px" /><img src="Projet 2 - Reservia/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau Chambres d'hôtes" height="100px" width="150px" /><img src="Projet 2 - Reservia/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel tout bleu et blanc" height="100px" width="150px" /></p>
+				</div>
+			</aside>
+			<div id="activites">
+				<h1>Activités à Marseille</h1>
+				<p><img src="Projet 2 - Reservia/images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Hôtel le soleil du matin" height="220px" width="160px" />
+				<div class="double">
+					<img src="Projet 2 - Reservia/images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Hôtel le soleil du matin" height="120px" width="160px" />
+					<img src="Projet 2 - Reservia/images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Hôtel le soleil du matin" height="120px" width="160px" />
+				</div>
+				<img src="Projet 2 - Reservia/images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Hôtel le soleil du matin" height="220px" width="160px" />
+				<div class="double">
+					<img src="Projet 2 - Reservia/images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Hôtel le soleil du matin" height="120px" width="160px" />
+					<img src="Projet 2 - Reservia/images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Hôtel le soleil du matin" height="120px" width="160px" />
+				</div>
+		</section>
+	</div>
+	<footer>
+		<div id="bloc_page">
+			<div id="a_propos">
+	            <h1>A propos</h1>
+	            <p><a href="#">Fonctionnement du site !</a></p>
+	            <p><a href="#">Conditions générales de vente</a></p>
+	            <p><a href="#">Données et confidentialité</a></p>    
+	        </div>
+	        <div id="a_propos">
+	            <h1>Nos hébergements</h1>
+	            <p><a href="#">Charte qualité</a></p>
+	            <p><a href="#">Soumettre votre hôtel</a></p>  
+	        </div>
+	        <div id="a_propos">
+	            <h1>Assistance</h1>
+	            <p><a href="#">Centre d'aide</a></p>
+	            <p><a href="#">Nous contacter</a></p>    
+	        </div>
+	    </div>
+	</footer>
   <!-- Le reste du contenu -->
-  ...
+
 </body>
 </html>

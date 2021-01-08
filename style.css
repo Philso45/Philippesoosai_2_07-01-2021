@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'Raleway-VariableFont_wght';
+    src: url('Raleway-VariableFont_wght.eot') format('eot'),
+         url('Raleway-VariableFont_wght.woff') format('woff'),
+         url('Raleway-VariableFont_wght.ttf') format('truetype'),
+         url('Raleway-VariableFont_wght.svg') format('svg');
+}
+p {
+	font-family: 'Raleway-VariableFont_wght' Arial , serif;
+	color:blue;
+} 
+
+h1 {
+	color:red;
+	font-family: 'Raleway-VariableFont_wght'
+}

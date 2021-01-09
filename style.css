@@ -5,12 +5,159 @@
          url('Raleway-VariableFont_wght.ttf') format('truetype'),
          url('Raleway-VariableFont_wght.svg') format('svg');
 }
-p {
-	font-family: 'Raleway-VariableFont_wght' Arial , serif;
-	color:blue;
-} 
 
-h1 {
-	color:red;
-	font-family: 'Raleway-VariableFont_wght'
+#bloc_page
+{
+    width: 900px;
+    margin: auto;
+    border:2px solid black;/*bordure à retirer*/
+}
+
+h1 { 
+	font-size: 1.1em;
+	margin-block-end: 0;
+ }
+
+ p {
+ 	font-size: 0.8em;
+ }
+
+/*header*/
+
+header {
+	display: flex;
+	justify-content: space-between;   
+}
+
+#logo img
+{
+    width: 70px;
+    height: 30px;
+    margin-top: 20px;
+}
+#titre_principal h1,p {
+	margin-block-end: 0;
+
+}
+#titre_principal p {
+	margin-block-start:0;
+}
+
+/*form*/
+form p input{
+	border-top:1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
+    border-left: none;
+    border-right: none;
+	padding: 10px;
+    font-weight: bold;
+    font-size: 0.8em
+	
+}
+form p input label{
+	padding: 5px 0 5px 0;
+
+}
+p button {
+    padding: 11px; 
+    background: #0065FC; 
+    border-radius: 0 10px 10px 0;
+    border:none;
+    margin-left: 0;
+}
+p button:hover {
+    background: #DEEBFF ;
+    transition: 0.5s;
+}
+
+.button1 {
+    color:#FFF;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+label {
+    border:1px solid #F2F2F2;
+    padding: 8px;
+    border-radius: 10px 0 0 10px;
+    background-color: #F2F2F2;
+    font-size: 1em
+}
+
+/*navigation*/
+
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+    margin-top: 20px;
+
+}
+
+nav li
+{
+    margin-right: 50px;
+}
+
+nav a
+{
+    font-size: 1.0em;
+    color: #181818;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+nav a:hover
+{
+    color: #0065FC;
+    border-top: 1px solid #0065FC;
+    padding-top: 20px
+   
+}
+
+/*filtres*/
+
+#filtres ul{
+    display:flex;
+    margin: 20px 0 0 0 ;
+    padding: 0;
+    list-style-type: none;
+}
+
+#filtres li a{
+    
+    text-decoration: none;
+    color:black;
+    border:2px solid #DEEBFF;
+    border-radius: 20px;
+    padding: 5px 10px 5px 0px;
+    font-weight: bold;
+    font-size: 0.8em;
+    border-left: none;
+}
+
+#filtres li {
+    margin-right: 20px;
+    font-weight: bold;
+    font-size: 0.8em;
+    
+}
+
+#filtres p {
+    margin-top: 30px;
+}
+
+#filtres .fas {
+    color : #0065FC;
+    padding: 7.5px;
+    border:1px solid #DEEBFF;
+    border-radius: 100%;
+    background: #DEEBFF;
+    margin-right: 5px;
+    margin-left: 0;
+    font-size: 0.8em;
+    text-align: center;
+
 }

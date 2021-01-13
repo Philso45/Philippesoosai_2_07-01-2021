@@ -8,9 +8,8 @@
 
 #bloc_page
 {
-    width: 900px;
+    width: 980px;
     margin: auto;
-    /*bordure à retirer*/
 }
 
 h1 { 
@@ -37,16 +36,18 @@ header {
     height: 30px;
     margin-top: 20px;
 }
+
 #titre_principal h1,p {
 	margin-block-end: 0;
-
 }
+
 #titre_principal p {
 	margin-block-start:0;
 }
 
 /*form*/
-form p input{
+
+.formulaire input{
 	border-top:1px solid #F2F2F2;
     border-bottom: 1px solid #F2F2F2;
     border-left: none;
@@ -55,23 +56,30 @@ form p input{
     font-weight: bold;
     font-size: 0.8em;
     font-family:Raleway-VariableFont_wght;
+    margin-top: 10px;
 	
 }
-form p input label{
+
+.formulaire input label{
 	padding: 5px 0 5px 0;
 
 }
-p button {
+
+.formulaire button {
     padding: 11px; 
     background: #0065FC; 
     border-radius: 0 10px 10px 0;
     border:none;
     margin-left: 0;
+    margin-top: 10px;
 }
-p button:hover {
+
+/*Pas forcément besoin à voir....
+formulaire button:hover {
     background: #DEEBFF ;
     transition: 0.5s;
 }
+*/
 
 .button1 {
     color:#FFF;
@@ -104,6 +112,7 @@ nav li:first-child
 {
     margin-right: 50px;
 }
+
 nav li:nth-child(2)
 {
     margin-right: 50px;
@@ -117,10 +126,12 @@ nav a
     text-decoration: none;
     font-family:Raleway-VariableFont_wght;
 }
-span {
+
+nav span {
     font-weight: bold;
     color:#0065FC;
 }
+
 nav a:hover
 {
     color: #0065FC;
@@ -130,6 +141,10 @@ nav a:hover
 }
 
 /*filtres*/
+
+#filtres {
+    display: flex;
+}
 
 #filtres ul{
     display:flex;
@@ -150,20 +165,20 @@ nav a:hover
     border-left: none;
     margin-right: 20px;
     font-family:Raleway-VariableFont_wght;
-    font-weight: bold;
 }
 
-#filtres li:first-child {
+#filtres span {
     margin-right: 20px;
     font-weight: bold;
     font-size: 0.8em;
     padding-top: 5px;
     font-family:Raleway-VariableFont_wght;
+    padding-top: 25px;
 }
 
 
-#filtres p {
-    margin-top: 30px;
+p {
+    margin-top: 15px;
     font-family:Raleway-VariableFont_wght;
 }
 
@@ -180,7 +195,7 @@ nav a:hover
 
 }
 
-#filtres p .fas {
+p .fas {
     color : #0065FC;
     padding: 5px 7px 5px 7px;
     border:1px solid #DEEBFF;
@@ -194,45 +209,39 @@ nav a:hover
 
 /*section*/
 
-section {
+#section_1 {
     display:flex;
-    
 }
+
 #hebergement {
     border:2px solid #F2F2F2;
     padding: 0 12px 0 12px;
     background-color: #F2F2F2;
     border-radius: 15px;
-    margin-top: 15px; 
-    width: 65%;
+    margin-top: 20px;
 }
-
-#populaires {
-    display:flex;
-    flex-direction: column;
-    justify-content: space-around;
-    background-color: #F2F2F2;
-    border:2px solid #F2F2F2;
-    border-radius: 15px;
-    margin-top: 15px;
-    padding: 0 17px 5px 17px;
-    
+#hebergement h1 {
+    margin:30px 0 15px 15px;
 }
 
 .premiere_img {
     display:flex;
     justify-content: space-around;
-    border-radius: 15px;
-    font-size: 0.8em;
 }
-.premiere_img h6{
+.premiere_img img {
     border:1px solid #FFF;
-    border-radius: 15px;
-    height: 130px;
-    width: 160px;
-    text-align: center;
-    margin-right: 0;
+    border-radius: 15px 15px 0 0;
+    height: 80px;
+    width: 170px;
+    margin:2px;
     background-color: #FFF;
+}
+.premiere_img p {
+    border:2px solid #FFF;
+    border-radius: 15px;
+    box-shadow: 0  5px 10px 0 black;
+    background-color: #FFF;
+    height: 160px;
 }
 
 .deuxieme_img {
@@ -240,17 +249,24 @@ section {
     justify-content: space-around;
     border-radius: 15px;
     font-size: 0.8em;
-    
+    margin-top: 15px;  
 }
-.deuxieme_img h6{
+
+.deuxieme_img img{
     border:1px solid #FFF;
-    border-radius: 15px;
-    height: 130px;
-    width: 160px;
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 1px;
+    border-radius: 15px 15px 0 0;
+    height: 80px;
+    width: 170px;
+    margin:2px;
     background-color: #FFF;
+}
+
+.deuxieme_img p {
+    border:2px solid #FFF;
+    border-radius: 15px;
+    box-shadow: 0  5px 10px 0 black;
+    background-color: #FFF;
+    height: 160px;
 }
 
 #hebergement p a {
@@ -259,36 +275,82 @@ section {
     text-decoration: none;
     color:black;
 }
+
 #hebergement p {
-    margin-left: 5px;
+    margin: 0 15px 15px 15px;
+}
+/* aside */
+aside {
+    margin-top: 4px;
 }
 
-#populaires h6 {
-    border:1px solid #FFF;
+#populaires {  
+    background-color: #F2F2F2;
+    border:2px solid #F2F2F2;
     border-radius: 15px;
-    height: 90px;
-    width: 220px;
-    text-align: center;
-    margin-right: 5px;
-    margin-top: 5px; 
-    margin-bottom: 10px;
+    margin-top: 15px;
+    padding: 0 20px 20px 20px;
+}
+
+#populaires img {
+    border:1px solid #FFF;
+    border-radius: 15px 0 0px 15px;
+    height: 100px;
+    width: 100px;
+    margin:2px;
     background-color: #FFF;
 }
-
+#populaires p {
+    border:2px solid #FFF;
+    border-radius: 15px;
+    box-shadow: 0  5px 10px 0 black;
+    background-color: #FFF;
+    width: 250px;
+    margin-bottom: 15px;
+}
 #populaires h1 {
-    padding-bottom: 13px;
+    margin:30px 0 15px 5px;
 }
 
-section {
+#section_1 {
     display:flex;
     justify-content: space-between;
 }
-/*deuxieme section*/
-
-/*footer*/
+/*section_2*/
+#section_2 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
 #activites {
     display:flex;
 }
+.vertical img {
+    height: 260px;
+    width: 200px;
+    border-radius: 15px 15px 0 0;
+}
+.vertical p {
+    background-color: #fff;
+    border:2px solid #fff;
+    border-radius: 15px;
+    box-shadow: 0  5px 10px 0 black;
+    height: 300px;
+    margin-right: 40px;
+}
+.double img {
+    height: 100px;
+    width: 220px;
+    border-radius: 15px 15px 0 0;
+}
+.double p {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0  5px 10px 0 black;
+    height: 140px;
+    margin-right: 40px;
+}
+/*footer*/
+
 footer {
     display:flex;
     background-color: #F2F2F2;
@@ -310,4 +372,30 @@ footer {
     text-decoration: none;
     color:black;
     font-size:0.8em;
+}
+
+/* responsive */
+
+@media (max-width:980px) {
+    #filtres {
+        flex-direction: column;
+    }
+    #filtres ul {
+        flex-wrap: wrap;
+    }
+    #filtres ul li {
+        width: 50%;
+    }
+
+    #filtres li:last-child {
+        width: 100%;
+    }
+
+    #filtres li:first-child {
+        margin-right: 0;
+        width: 35%;
+    }
+    #filtres li:first-child a {
+        margin-right: 0;
+    }
 }

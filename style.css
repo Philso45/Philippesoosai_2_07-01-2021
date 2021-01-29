@@ -22,12 +22,15 @@ h1 {
  	font-size: 0.8em;
     font-family:Raleway-VariableFont_wght;
  }
+ img {
+    object-fit: cover;
+ }
 
 /*header*/
 
 header {
 	display: flex;
-	justify-content: space-between;   
+    justify-content: space-between;
 }
 
 #logo img
@@ -35,6 +38,9 @@ header {
     width: 70px;
     height: 30px;
     margin-top: 20px;
+}
+#logo {
+    display: block;
 }
 
 #titre_principal h1,p {
@@ -74,13 +80,9 @@ header {
     margin-top: 10px;
 }
 
-/*Pas forcément besoin à voir....
-formulaire button:hover {
-    background: #DEEBFF ;
-    transition: 0.5s;
+.formulaire button .fas {
+    display: none;
 }
-*/
-
 .button1 {
     color:#FFF;
     text-decoration: none;
@@ -100,7 +102,19 @@ label {
 }
 
 /*navigation*/
+header a  {
+    text-decoration: none;
+    color:#0065FC;
+    font-weight: bold;
+    padding-top: 24px;
+    font-size: 0.7em;
+    font-family:Raleway-VariableFont_wght;
+}
 
+header a:hover {
+    border-top: 1px solid #0065FC;
+    padding-top: 20px
+}
 nav ul
 {
     list-style-type: none;
@@ -108,7 +122,9 @@ nav ul
     margin-top: 20px;
 
 }
-
+nav {
+    margin-left: 60%
+}
 nav li:first-child
 {
     margin-right: 50px;
@@ -196,6 +212,11 @@ p {
 
 }
 
+#filtres a:hover {
+    transition: 1s ease;
+    background-color: #DEEBFF;
+}
+
 p .fas {
     color : #0065FC;
     padding: 5px 7px 5px 7px;
@@ -209,7 +230,10 @@ p .fas {
 }
 
 /*section*/
-
+#hebergement a {
+    text-decoration: none;
+    color:black;
+}
 #section_1 {
     display:flex;
 }
@@ -239,7 +263,7 @@ p .fas {
 .premiere_img .first {
     border-radius: 15px;
     padding: 2px;
-    box-shadow: 1px 1px 8px #555;
+    box-shadow: 5px 5px 7px #e4e1e1;
     background-color: #FFF;
     height: 150px;
 }
@@ -248,6 +272,10 @@ p .fas {
    padding: 0;
    margin: 0;
    font-size:0.8em;
+}
+
+.premiere_img .far {
+    color:#e4e1e1;
 }
 .deuxieme_img {
     display:flex;
@@ -259,7 +287,7 @@ p .fas {
 .deuxieme_img .first {
     border-radius: 15px;
     padding: 2px;
-    box-shadow: 1px 1px 8px #555;
+    box-shadow: 5px 5px 7px #e4e1e1;
     background-color: #FFF;
     height: 150px;
 }
@@ -269,6 +297,9 @@ p .fas {
    padding: 0;
    margin: 0;
    font-size: 0.8em;
+}
+.deuxieme_img .far {
+    color:#e4e1e1;
 }
 
 #hebergement p a {
@@ -303,7 +334,10 @@ aside {
     margin-top: 20px;
     padding: 0 20px 0 20px;
 }
-
+#populaires a {
+    text-decoration: none;
+    color:black;
+}
 #populaires h1 .fas {
     margin-left: 80px;
     color:black;
@@ -329,13 +363,23 @@ aside {
    font-size: 0.8em;
 }
 
+.second .far {
+    color: #e4e1e1;
+}
+
 #populaires .second {
     border-radius: 15px;
-    box-shadow: 1px 1px 8px #555;
+    box-shadow: 5px 5px 7px #e4e1e1;
     background-color: #FFF;
     width: 250px;
     margin-bottom: 25px;
 
+}
+.soleil {
+    margin: 10px 0 0 10px;
+}
+.soleil p .fas{
+    padding-top: 15px;
 }
 #populaires h1 {
     margin:17px 0 15px 5px;
@@ -349,6 +393,11 @@ aside {
 
 
 /*section_2*/
+
+#section_2 a {
+    text-decoration: none;
+    color:black;
+}
 
 #section_2 {
     margin-top: 30px;
@@ -369,7 +418,7 @@ aside {
 }
 .vertical .titre_2 { 
     border-radius: 15px;
-    box-shadow: 1px 1px 8px #555;
+    box-shadow: 5px 5px 7px #e4e1e1;
     height: 340px;
     margin-right: 40px;
 }
@@ -381,7 +430,7 @@ aside {
 }
 .double .titre_2 { 
     border-radius: 15px;
-    box-shadow: 1px 1px 8px #555;
+    box-shadow: 5px 5px 7px #e4e1e1;
     height: 160px;
     margin-bottom: 20px;
     margin-right: 40px;
@@ -421,16 +470,55 @@ footer {
 
 /* responsive */
 
-@media (max-width:576px) {
+@media only screen and (max-width: 576px) 
+{
     #titre_principal p {
         margin-top: 10px;
     }
     #titre_principal h1 {
-        width: 70%;
+        width: 60%;
+    }
+    #bloc_page {
+        width: 100%;
+    }
+    
+    header {
+        flex-wrap: wrap;
+    }
+
+    header a {
+        width: 50%;
+    }
+    nav {
+        order: 3;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        margin-left: 0;
     }
     nav ul {
-        display: flex;
-        flex-direction: column;
+    display: flex;
+    flex-direction: row;
+    padding-left: 12px;
+    margin-bottom: 10px;
+    }
+    header a span {
+        padding-left: 40px;
+    }
+    nav 
+    {
+    border-bottom: 3px solid #DEEBFF;
+    border-top:none;
+    }
+    nav a:hover {
+    border-bottom: 3px solid #0065FC;
+    padding-bottom: 10px;
+    border-top:none;
+    }
+    #filtres li:first-child {
+    margin-right: 0;
+    width: auto;
     }
     #filtres {
         flex-direction: column;
@@ -448,14 +536,18 @@ footer {
     }
 
     #filtres li:first-child {
-        margin-right: 0;
-        width: 15%;
+        margin-right: 5px;
+
     }
     #filtres li:first-child a {
         margin-right: 0;
     }
     #filtres span{
         padding-top: 5px;
+    }
+    aside {
+        width: 65%;
+        border-radius: 0;
     }
     #section_1 {
 
@@ -465,29 +557,38 @@ footer {
     .premiere_img {
     display:flex;
     flex-direction: column;
-    width: 29.5%;
     }
     .premiere_img img {
         width: 100%;
     }
+    .first {
+        width: 70%;
+    }
+    #hebergement .first {
+    margin: 0 15px 15px 5px;
+    width: 100%;
+    }
     .deuxieme_img {
         display:flex;
         flex-direction: column;
-        width: 29.5%;
     }
     .deuxieme_img img {
         width: 100%;
     }
     #hebergement {
         background-color: #fff;
+        margin-right: 20px;
+    }
+    #populaires .second {
+    width: 90%;
     }
     aside {
-        width: 27%;
-        border-radius: 0;
+        width: 100%;
     }
     #activites {
         display: flex;
         flex-direction: column;
+        margin-right: 25px;
     }
     .vertical img {
         height: 120px;
@@ -497,16 +598,22 @@ footer {
         width: 100%;
     }
     .vertical .titre_2{
+    width: 98%; 
     height: 160px;
-    width: 220px;
-    width: 25%;
-    margin-left: 20px;
+    margin-left: 10px;
     }
     .double .titre_2 {
+    width: 98%; 
     height: 160px;
-    width: 25%;
     margin-top: 20px;
-    margin-left: 20px;
+    margin-left: 10px;
+    
+    }
+    .vertical {
+        padding-left: 5px;
+    }
+    .double {
+        padding-left: 5px;
     }
     #section_2 h1 {
     margin-left: 20px;
@@ -514,9 +621,15 @@ footer {
     footer {
     display:flex;
     flex-direction: column;
-    width: 28%;
+    width: 100%;
     }
     header {
         width: 50%;
+    }
+    .formulaire button span {
+    display:none;
+    }
+  .formulaire button .fas {
+    display:block;
     }
 }

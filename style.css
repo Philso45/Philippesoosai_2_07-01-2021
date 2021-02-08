@@ -17,7 +17,11 @@ h1 {
 	margin-block-end: 0;
     font-family:Raleway-VariableFont_wght;
  }
-
+h3 { 
+    font-size: 1em;
+    margin-block-end: 0;
+    font-family:Raleway-VariableFont_wght;
+ }
  p {
  	font-size: 0.8em;
     font-family:Raleway-VariableFont_wght;
@@ -52,7 +56,9 @@ header {
 }
 
 /*form*/
-
+.formulaire {
+    display: flex;
+}
 .formulaire input{
 	border-top:1px solid #F2F2F2;
     border-bottom: 1px solid #F2F2F2;
@@ -62,7 +68,6 @@ header {
     font-weight: bold;
     font-size: 0.8em;
     font-family:Raleway-VariableFont_wght;
-    margin-top: 10px;
 	
 }
 
@@ -70,14 +75,12 @@ header {
 	padding: 5px 0 5px 0;
 
 }
-
 .formulaire button {
     padding: 11px; 
     background: #0065FC; 
     border-radius: 0 10px 10px 0;
     border:none;
     margin-left: 0;
-    margin-top: 10px;
 }
 
 .formulaire button .fas {
@@ -245,7 +248,7 @@ p .fas {
     margin-top: 20px;
     margin-right: 40px;
 }
-#hebergement h1 {
+#hebergement h3 {
     margin:30px 0 15px 15px;
 }
 
@@ -338,7 +341,7 @@ aside {
     text-decoration: none;
     color:black;
 }
-#populaires h1 .fas {
+#populaires h3 .fas {
     margin-left: 80px;
     color:black;
 }
@@ -381,7 +384,7 @@ aside {
 .soleil p .fas{
     padding-top: 15px;
 }
-#populaires h1 {
+#populaires h3 {
     margin:17px 0 15px 5px;
     padding-top: 20px;
 }
@@ -404,8 +407,8 @@ aside {
     margin-bottom: 30px;
 }
 
-#section_2 h1 {
-    margin-bottom: 20px;
+#section_2 h3 {
+    margin:30px 0 15px 15px;
 }
 #activites {
     display:flex;
@@ -451,18 +454,18 @@ footer {
     padding: 15px;
 }
 
-#a_propos {
+.a_propos {
     display:flex;
     flex-direction: column;
     padding: 15px;
     margin-right: 120px;
 }
 
-#a_propos h1 {
+.a_propos h3 {
     font-size: 0.8em;
 }
 
-#a_propos a {
+.a_propos a {
     text-decoration: none;
     color:black;
     font-size:0.8em;
@@ -473,10 +476,13 @@ footer {
 @media only screen and (max-width: 576px) 
 {
     #titre_principal p {
-        margin-top: 10px;
+        margin-top: 5px;
+        margin-left: 25px;
+        margin-bottom: 20px;
     }
     #titre_principal h1 {
         width: 60%;
+        margin-left: 25px;
     }
     #bloc_page {
         width: 100%;
@@ -492,43 +498,59 @@ footer {
     nav {
         order: 3;
         width: 100%;
+        margin-left: 0;
+    }
+    nav a {
+        font-size: 1em;
+    }
+    nav ul {
         display: flex;
         justify-content: space-between;
         flex-direction: row;
-        margin-left: 0;
-    }
-    nav ul {
-    display: flex;
-    flex-direction: row;
-    padding-left: 12px;
-    margin-bottom: 10px;
+        margin-bottom: 10px;
     }
     header a span {
-        padding-left: 40px;
+        padding-left: 60%;
+        font-size: 16px;
     }
     nav 
     {
-    border-bottom: 3px solid #DEEBFF;
-    border-top:none;
+        border-bottom: 3px solid #DEEBFF;
+        border-top:none;
     }
     nav a:hover {
-    border-bottom: 3px solid #0065FC;
-    padding-bottom: 10px;
-    border-top:none;
+        border-bottom: 3px solid #0065FC;
+        padding-bottom: 10px;
+        border-top:none;
+    }
+    .fa-search:before {
+        content: "\f002";
+        font-size: 20px;
+    }
+    .fa-map-marker-alt:before {
+        font-size: 20px;
+        content: "\f3c5";
+    }
+    label {
+        padding: 15px;
     }
     #filtres li:first-child {
-    margin-right: 0;
-    width: auto;
+        margin-right: 0;
+        width: auto;
     }
     #filtres {
         flex-direction: column;
     }
     #filtres ul {
         flex-wrap: wrap;
+        margin-left: 25px;
     }
     #filtres ul li {
         margin-bottom: 10px;
         width: 50%;
+    }
+    #filtres li a {
+        font-size: 1em;
     }
 
     #filtres li:last-child {
@@ -543,20 +565,24 @@ footer {
         margin-right: 0;
     }
     #filtres span{
-        padding-top: 5px;
+        padding-top: 15px;
+        margin-left: 25px;
+        font-size: 1em;
     }
     aside {
         width: 65%;
         border-radius: 0;
     }
+    #populaires a {
+        margin-left: 25%;
+    }
     #section_1 {
-
-    display:flex;
-    flex-direction: column-reverse;
+        display:flex;
+        flex-direction: column-reverse;
     }
     .premiere_img {
-    display:flex;
-    flex-direction: column;
+        display:flex;
+        flex-direction: column;
     }
     .premiere_img img {
         width: 100%;
@@ -565,8 +591,8 @@ footer {
         width: 70%;
     }
     #hebergement .first {
-    margin: 0 15px 15px 5px;
-    width: 100%;
+        margin: 0 15px 15px 5px;
+        width: 100%;
     }
     .deuxieme_img {
         display:flex;
@@ -580,7 +606,7 @@ footer {
         margin-right: 20px;
     }
     #populaires .second {
-    width: 90%;
+        width: 90%;
     }
     aside {
         width: 100%;
@@ -598,16 +624,15 @@ footer {
         width: 100%;
     }
     .vertical .titre_2{
-    width: 98%; 
-    height: 160px;
-    margin-left: 10px;
+        width: 98%; 
+        height: 160px;
+        margin-left: 10px;
     }
     .double .titre_2 {
-    width: 98%; 
-    height: 160px;
-    margin-top: 20px;
-    margin-left: 10px;
-    
+        width: 98%; 
+        height: 160px;
+        margin-top: 20px;
+        margin-left: 10px;
     }
     .vertical {
         padding-left: 5px;
@@ -616,20 +641,34 @@ footer {
         padding-left: 5px;
     }
     #section_2 h1 {
-    margin-left: 20px;
+        margin-left: 20px;
     }
     footer {
-    display:flex;
-    flex-direction: column;
-    width: 100%;
+        display:flex;
+        flex-direction: column;
+        width: 100%;
     }
-    header {
-        width: 50%;
-    }
+    
     .formulaire button span {
-    display:none;
+        display:none;
     }
-  .formulaire button .fas {
-    display:block;
+    .formulaire button .fas {
+        display:block;
+    }
+    .formulaire button{
+        border-radius: 10px 10px 10px 10px;
+    }
+    .formulaire input {
+        padding: 15px;
+        font-size: 1em;
+    }
+    label {
+        margin-left: 25px;
+    }
+    .a_propos a {
+        font-size: 0.9em;
+    }
+    .a_propos h3 {
+        font-size: 1em;
     }
 }

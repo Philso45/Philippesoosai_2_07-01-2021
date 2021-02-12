@@ -1,7 +1,6 @@
 @font-face {
     font-family: 'Raleway-VariableFont_wght';
     src: url('Raleway-VariableFont_wght.eot') format('eot'),
-         url('Raleway-VariableFont_wght.woff') format('woff'),
          url('Raleway-VariableFont_wght.ttf') format('truetype'),
          url('Raleway-VariableFont_wght.svg') format('svg');
 }
@@ -14,12 +13,11 @@
 
 h1 { 
 	font-size: 1em;
-	margin-block-end: 0;
     font-family:Raleway-VariableFont_wght;
+    margin-bottom: 0;
  }
 h3 { 
     font-size: 1em;
-    margin-block-end: 0;
     font-family:Raleway-VariableFont_wght;
  }
  p {
@@ -47,13 +45,6 @@ header {
     display: block;
 }
 
-#titre_principal h1,p {
-	margin-block-end: 0;
-}
-
-#titre_principal p {
-	margin-block-start:0;
-}
 
 /*form*/
 .formulaire {
@@ -353,11 +344,15 @@ aside {
     margin:2px;
     
 }
+.second img:nth-child(3) {
+    width: 110px;
+    }
 .second {
     display:flex;
 }
 .second p,span {
     margin-top: 3px;
+    margin-bottom: 0;
 }
 .second .fas, .far{
    border:none;
@@ -387,6 +382,7 @@ aside {
 #populaires h3 {
     margin:17px 0 15px 5px;
     padding-top: 20px;
+
 }
 
 #section_1 {

@@ -682,7 +682,7 @@ footer {
 @media only screen and (max-width: 576px) 
 {
     #titre_principal p {
-        margin-top: 5px;
+        margin-top: 15px;
         margin-left: 25px;
         margin-bottom: 20px;
     }
@@ -779,6 +779,9 @@ footer {
         width: 65%;
         border-radius: 0;
     }
+    #populaires h2 {
+        width: 105%
+    }
     #populaires a {
         margin-left: 25%;
     }
@@ -815,7 +818,7 @@ footer {
         width: 90%;
     }
     aside {
-        width: 100%;
+        width: 90%;
     }
     #activites {
         display: flex;
@@ -852,7 +855,7 @@ footer {
     footer {
         display:flex;
         flex-direction: column;
-        width: 100%;
+        width: 90%;
     }
     
     .formulaire button span {
@@ -880,15 +883,24 @@ footer {
 }
 @media only screen and (min-width: 580px) and (max-width: 1024px)
 {
+    #bloc_page {
+        width: 980px;
+        margin:auto;
+    }
     header {
         width: 98%
     }
     #hebergement {
-        padding: 0 0 12px;
-        width: 129%;
+        padding: 0 15px 0 12px;
     }
     #section_1 {
-        width: 50%;
+        width: 49%;
+    }
+    aside {
+        padding: 0 15px 0 15px;
+    }
+    #hebergement .first {
+    margin: 0 15px 15px 10px;
     }
     .vertical {
         margin-right: -15px;
@@ -897,6 +909,6 @@ footer {
         margin-right: -15px
     }
     footer {
-        width: 95%;
+        width: 98%;
     }
 }

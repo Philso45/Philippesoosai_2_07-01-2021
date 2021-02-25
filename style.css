@@ -755,15 +755,14 @@ footer {
     #activites .double.second {
         order: 4;
         display: flex;
-        
-
+        width: 100%;    
     }
     #section_1 {
     display: flex;
     width: 93%;
     }
     #section_2 {
-    width: 90%;
+    width: 95%;
     margin: auto;
     }
     footer {

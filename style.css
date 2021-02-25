@@ -707,7 +707,9 @@ footer {
         width: 30%;
     }
 
-
+    .vertical .titre_2 {
+        margin-bottom:20px
+    }
 
     #activites {
         display: flex;
@@ -718,6 +720,8 @@ footer {
         order: 1;
         height: auto;
         width: 45%;
+        margin-right: 50px;
+        margin-left: 3%;
     }
 
     #activites .vertical.second {
@@ -732,12 +736,16 @@ footer {
     #activites .double.first {
         order: 3;
         display: flex;
+        margin-left: 25px;
     }
 
     #activites .double a{
         width: 45%;
+        margin-right: 50px;
     }
-
+    .double .titre_2 {
+        margin-right: 0;
+    }
     #activites .double img {
         width: 100%;
     }
@@ -745,9 +753,16 @@ footer {
     #activites .double.second {
         order: 4;
         display: flex;
-    }
+        margin-left: 25px;
 
+    }
+    #section_1 {
+    display: flex;
+    }
     footer {
-        width: 98%;
+        width: 95%;
+    }
+    .a_propos {
+        margin-right: 15%;
     }
 }

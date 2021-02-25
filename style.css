@@ -1,39 +1,35 @@
 @font-face {
     font-family: 'Raleway-VariableFont_wght';
-    src: url('Raleway-VariableFont_wght.eot') format('eot'),
-         url('Raleway-VariableFont_wght.ttf') format('truetype'),
-         url('Raleway-VariableFont_wght.svg') format('svg');
+    url('Raleway-VariableFont_wght.ttf') format('truetype'),
+    url('Raleway-VariableFont_wght.svg') format('svg');
 }
 
-#bloc_page
-{
-    width: 980px;
-    margin: auto;
+
+
+body {
+    font-family: Raleway-VariableFont_wght, serif;
 }
-body { 
-    font-family:Raleway-VariableFont_wght;
-}
-h1 { 
-	font-size: 1.1em;
-    font-family:Raleway-VariableFont_wght;
-    margin-bottom: 0;
- }
-h2 { 
+h1 {
     font-size: 1.1em;
-    font-family:Raleway-VariableFont_wght;
- }
- p {
- 	font-size: 1em;
-    font-family:Raleway-VariableFont_wght;
- }
- img {
+    font-family: Raleway-VariableFont_wght, serif;
+    margin-bottom: 0;
+}
+h2 {
+    font-size: 1.1em;
+    font-family: Raleway-VariableFont_wght, serif;
+}
+p {
+    font-size: 1em;
+    font-family: Raleway-VariableFont_wght, serif;
+}
+img {
     object-fit: cover;
- }
+}
 
 /*header*/
 
 header {
-	display: flex;
+    display: flex;
     justify-content: space-between;
 }
 
@@ -53,24 +49,23 @@ header {
     display: flex;
 }
 .formulaire input{
-	border-top:1px solid #F2F2F2;
+    border-top:1px solid #F2F2F2;
     border-bottom: 1px solid #F2F2F2;
     border-left: none;
     border-right: none;
-	padding: 10px;
+    padding: 10px;
     font-weight: bold;
     font-size: 0.8em;
-    font-family:Raleway-VariableFont_wght;
-	
+    font-family: Raleway-VariableFont_wght, serif;
 }
 
 .formulaire input label{
-	padding: 5px 0 5px 0;
+    padding: 5px 0 5px 0;
 
 }
 .formulaire button {
-    padding: 11px; 
-    background: #0065FC; 
+    padding: 11px;
+    background: #0065FC;
     border-radius: 0 10px 10px 0;
     border:none;
     margin-left: 0;
@@ -85,8 +80,7 @@ header {
     cursor: pointer;
     font-weight: bold;
     font-size: 0.8em;
-    font-family:Raleway-VariableFont_wght;
-
+    font-family: Raleway-VariableFont_wght, serif;
 }
 
 label {
@@ -104,7 +98,7 @@ header a  {
     font-weight: bold;
     padding-top: 24px;
     font-size: 0.7em;
-    font-family:Raleway-VariableFont_wght;
+    font-family: Raleway-VariableFont_wght, serif;
 }
 
 header a:hover {
@@ -137,7 +131,7 @@ nav a
     color: #181818;
     padding-bottom: 3px;
     text-decoration: none;
-    font-family:Raleway-VariableFont_wght;
+    font-family: Raleway-VariableFont_wght, serif;
 }
 
 nav span {
@@ -150,7 +144,7 @@ nav a:hover
     color: #0065FC;
     border-top: 1px solid #0065FC;
     padding-top: 20px
-   
+
 }
 
 /*filtres*/
@@ -167,32 +161,31 @@ nav a:hover
 }
 
 #filtres li a{
-    
+
     text-decoration: none;
     color:black;
     border:2px solid #DEEBFF;
     border-radius: 20px;
-    padding: 5px 10px 5px 0px;
+    padding: 5px 10px 5px 0;
     font-weight: bold;
     font-size: 0.8em;
     border-left: none;
     margin-right: 20px;
-    font-family:Raleway-VariableFont_wght;
+    font-family: Raleway-VariableFont_wght, serif;
 }
 
 #filtres span {
     margin-right: 20px;
     font-weight: bold;
     font-size: 0.8em;
-    padding-top: 5px;
-    font-family:Raleway-VariableFont_wght;
+    font-family: Raleway-VariableFont_wght, serif;
     padding-top: 20px;
 }
 
 
 p {
     margin-top: 15px;
-    font-family:Raleway-VariableFont_wght;
+    font-family: Raleway-VariableFont_wght, serif;
 }
 
 #filtres .fas {
@@ -222,7 +215,6 @@ p .fas {
     margin-right: 5px;
     margin-left: 0;
     font-size: 0.7em;
-
 }
 
 /*section*/
@@ -230,11 +222,9 @@ p .fas {
     text-decoration: none;
     color:black;
 }
-#section_1 {
-    display:flex;
-}
 
 #hebergement {
+    width: 65%;
     padding: 0 12px 0 12px;
     background-color: #F2F2F2;
     border-radius: 15px;
@@ -245,58 +235,40 @@ p .fas {
     margin:30px 0 15px 15px;
 }
 
-.premiere_img {
-    display:flex;
-    justify-content: space-around;
+#hebergement .list {
+    display: flex;
+    flex-wrap: wrap;
 }
-.first img {
+#hebergement .list a {
+    width: 33%;
+}
+
+#hebergement .list .first img {
     border-radius: 15px 15px 0 0;
     height: 80px;
-    width: 180px;
+    object-fit: cover;
+    width: 100%;
     margin:1px;
     background-color: #FFF;
 }
-.premiere_img .first {
+#hebergement .list .first {
     border-radius: 15px;
     padding: 2px;
     box-shadow: 5px 5px 7px #e4e1e1;
     background-color: #FFF;
     height: 150px;
 }
-.premiere_img .fas, .far{
-   border:none;
-   padding: 0;
-   margin: 0;
-   font-size:0.8em;
+#hebergement .list .fas{
+    border:none;
+    padding: 0;
+    margin: 0;
+    font-size:0.8em;
 }
 
-.premiere_img .far {
+#hebergement .list .far {
     color:#e4e1e1;
 }
-.deuxieme_img {
-    display:flex;
-    justify-content: space-around;
-    border-radius: 15px;
-    margin-top: 15px;  
-}
 
-.deuxieme_img .first {
-    border-radius: 15px;
-    padding: 2px;
-    box-shadow: 5px 5px 7px #e4e1e1;
-    background-color: #FFF;
-    height: 150px;
-}
-
-.deuxieme_img .fas, .far{
-   border:none;
-   padding: 0;
-   margin: 0;
-   font-size: 0.8em;
-}
-.deuxieme_img .far {
-    color:#e4e1e1;
-}
 
 #hebergement p a {
     font-size:1em;
@@ -310,21 +282,21 @@ p .fas {
     margin: 0 15px 15px 15px;
 }
 
-.first p {
+#hebergement  .first p {
     margin-top: 2px;
     margin-left: 10px;
     font-size: 0.7em;
 }
-.first span {
+#hebergement  .first span {
     font-weight: bold;
     margin-left: 10px;
     font-size: 0.9em;
-    font-family:Raleway-VariableFont_wght;
+    font-family: Raleway-VariableFont_wght, serif;
 }
 
 /* aside */
 
-aside {
+#section_1 aside {
     background-color: #F2F2F2;
     border-radius: 15px;
     margin-top: 20px;
@@ -337,36 +309,37 @@ aside {
 #populaires h2 .fas {
     margin-left: 70px;
     color:black;
+    width: 1px;
 }
-.second img {
-    border-radius: 15px 0 0px 15px;
-    height: 100px;
+#populaires .second img {
+    border-radius: 15px 0 0 15px;
+    height: 120px;
     width: 100px;
     background-color: #FFF;
     margin:2px;
-    
+
 }
-.second img:nth-child(3) {
+#populaires .second img:nth-child(3) {
     width: 110px;
-    }
-.second {
+}
+#populaires .second {
     display:flex;
 }
-.second span {
+#populaires .second span {
     font-weight: bold;
 }
-.second p,span {
+#populaires.second p,span {
     margin-top: 3px;
     margin-bottom: 0;
 }
-.second .fas, .far{
-   border:none;
-   padding: 0;
-   margin: 0;
-   font-size: 0.8em;
+#populaires .second .fas, .far{
+    border:none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.8em;
 }
 
-.second .far {
+#populaires .second .far {
     color: #e4e1e1;
 }
 
@@ -416,15 +389,13 @@ aside {
     display:flex;
 }
 .vertical img {
-    height: 300px;
     width: 220px;
     border-radius: 15px 15px 0 0;
     margin-bottom: 9px;
 }
-.vertical .titre_2 { 
+.vertical .titre_2 {
     border-radius: 15px;
     box-shadow: 5px 5px 7px #e4e1e1;
-    height: 340px;
     margin-right: 40px;
 }
 .double img {
@@ -433,7 +404,7 @@ aside {
     border-radius: 15px 15px 0 0;
     margin-bottom: 8px;
 }
-.double .titre_2 { 
+.double .titre_2 {
     border-radius: 15px;
     box-shadow: 5px 5px 7px #e4e1e1;
     height: 160px;
@@ -445,7 +416,7 @@ aside {
     font-weight: bold;
     margin-left: 15px;
     font-size: 0.9em;
-    font-family:Raleway-VariableFont_wght;
+    font-family: Raleway-VariableFont_wght, serif;
 }
 
 /*footer*/
@@ -475,8 +446,29 @@ footer {
 
 /* responsive */
 
-@media only screen and (max-width: 576px) 
+@media only screen and (min-width: 1024px)
 {
+    #bloc_page {
+        width: 980px;
+        margin: auto;
+    }
+
+    .vertical .titre_2 {
+        height: 340px;
+    }
+
+    .vertical img {
+        height: 300px;
+        width: 220px;
+    }
+}
+
+
+@media only screen and (max-width: 576px)
+{
+    h1 {
+        margin-left: 25px;
+    }
     #logo img {
         width: 100px;
         height: 30px;
@@ -487,14 +479,11 @@ footer {
         margin-left: 25px;
         margin-bottom: 30px;
     }
-    #titre_principal h1 {
-        width: 60%;
-        margin-left: 25px;
-    }
+
     #bloc_page {
         width: 100%;
     }
-    
+
     header {
         flex-wrap: wrap;
     }
@@ -520,7 +509,7 @@ footer {
         padding-left: 60%;
         font-size: 16px;
     }
-    nav 
+    nav
     {
         border-bottom: 3px solid #DEEBFF;
         border-top:none;
@@ -594,9 +583,7 @@ footer {
     .premiere_img img {
         width: 100%;
     }
-    .first {
-        width: 70%;
-    }
+
     #hebergement .first {
         margin: 0 15px 15px 5px;
         width: 100%;
@@ -609,9 +596,14 @@ footer {
         width: 100%;
     }
     #hebergement {
+        width: 100%;
         background-color: #fff;
         margin-right: 20px;
     }
+    #hebergement .list a {
+        width: 90%;
+    }
+
     #populaires .second {
         width: 90%;
     }
@@ -631,12 +623,12 @@ footer {
         width: 100%;
     }
     .vertical .titre_2{
-        width: 98%; 
+        width: 98%;
         height: 160px;
         margin-left: 10px;
     }
     .double .titre_2 {
-        width: 98%; 
+        width: 98%;
         height: 160px;
         margin-top: 20px;
         margin-left: 10px;
@@ -653,9 +645,8 @@ footer {
     footer {
         display:flex;
         flex-direction: column;
-        width: 100%;
     }
-    
+
     .formulaire button span {
         display:none;
     }
@@ -679,235 +670,83 @@ footer {
         font-size: 1em;
     }
 }
-@media only screen and (max-width: 576px) 
-{
-    #titre_principal p {
-        margin-top: 15px;
-        margin-left: 25px;
-        margin-bottom: 20px;
-    }
-    #titre_principal h1 {
-        width: 60%;
-        margin-left: 25px;
-    }
-    #bloc_page {
-        width: 100%;
-    }
-    
-    header {
-        flex-wrap: wrap;
-    }
 
-    header a {
-        width: 50%;
-    }
-    nav {
-        order: 3;
-        width: 100%;
-        margin-left: 0;
-    }
-    nav a {
-        font-size: 1em;
-    }
-    nav ul {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-        margin-bottom: 10px;
-    }
-    header a span {
-        padding-left: 60%;
-        font-size: 16px;
-    }
-    nav 
-    {
-        border-bottom: 3px solid #DEEBFF;
-        border-top:none;
-    }
-    nav a:hover {
-        border-bottom: 3px solid #0065FC;
-        padding-bottom: 10px;
-        border-top:none;
-    }
-    .fa-search:before {
-        content: "\f002";
-        font-size: 20px;
-    }
-    .fa-map-marker-alt:before {
-        font-size: 20px;
-        content: "\f3c5";
-    }
-    label {
-        padding: 15px;
-    }
-    #filtres li:first-child {
-        margin-right: 0;
-        width: auto;
-    }
-    #filtres {
-        flex-direction: column;
-    }
-    #filtres ul {
-        flex-wrap: wrap;
-        margin-left: 25px;
-    }
-    #filtres ul li {
-        margin-bottom: 10px;
-        width: 50%;
-    }
-    #filtres li a {
-        font-size: 1em;
-    }
-
-    #filtres li:last-child {
-        width: 100%;
-    }
-
-    #filtres li:first-child {
-        margin-right: 5px;
-
-    }
-    #filtres li:first-child a {
-        margin-right: 0;
-    }
-    #filtres span{
-        padding-top: 15px;
-        margin-left: 25px;
-        font-size: 1em;
-    }
-    aside {
-        width: 65%;
-        border-radius: 0;
-    }
-    #populaires h2 {
-        width: 105%
-    }
-    #populaires a {
-        margin-left: 25%;
-    }
-    #section_1 {
-        display:flex;
-        flex-direction: column-reverse;
-    }
-    .premiere_img {
-        display:flex;
-        flex-direction: column;
-    }
-    .premiere_img img {
-        width: 100%;
-    }
-    .first {
-        width: 70%;
-    }
-    #hebergement .first {
-        margin: 0 15px 15px 5px;
-        width: 100%;
-    }
-    .deuxieme_img {
-        display:flex;
-        flex-direction: column;
-    }
-    .deuxieme_img img {
-        width: 100%;
-    }
-    #hebergement {
-        background-color: #fff;
-        margin-right: 20px;
-    }
-    #populaires .second {
-        width: 90%;
-    }
-    aside {
-        width: 100%;
-    }
-    #activites {
-        display: flex;
-        flex-direction: column;
-        margin-right: 25px;
-    }
-    .vertical img {
-        height: 120px;
-        width: 100%;
-    }
-    .double img {
-        width: 100%;
-    }
-    .vertical .titre_2{
-        width: 98%; 
-        height: 160px;
-        margin-left: 10px;
-    }
-    .double .titre_2 {
-        width: 98%; 
-        height: 160px;
-        margin-top: 20px;
-        margin-left: 10px;
-    }
-    .vertical {
-        padding-left: 5px;
-    }
-    .double {
-        padding-left: 5px;
-    }
-    #section_2 h1 {
-        margin-left: 20px;
-    }
-    footer {
-        display:flex;
-        flex-direction: column;
-        width: 90%;
-    }
-    
-    .formulaire button span {
-        display:none;
-    }
-    .formulaire button .fas {
-        display:block;
-    }
-    .formulaire button{
-        border-radius: 10px 10px 10px 10px;
-    }
-    .formulaire input {
-        padding: 15px;
-        font-size: 1em;
-    }
-    label {
-        margin-left: 25px;
-    }
-    .a_propos a {
-        font-size: 0.9em;
-    }
-    .a_propos h3 {
-        font-size: 1em;
-    }
-}
 @media only screen and (min-width: 580px) and (max-width: 1024px)
 {
-    #bloc_page {
-        width: 980px;
-        margin:auto;
-    }
     header {
-        width: 98%
+        width: 93%
     }
+
+    header nav {
+        margin-left: 48%;
+    }
+
     #hebergement {
-        padding: 0 15px 0 12px;
+        padding: 0;
+        margin-right: 10px;
     }
-    #section_1 {
-        width: 49%;
-    }
+
     aside {
         padding: 0 15px 0 15px;
+        width: 38%;
     }
     #hebergement .first {
-    margin: 0 15px 15px 10px;
+        margin: 0 5px 15px 5px;
     }
-    .vertical {
-        margin-right: -15px;
+    #populaires .second {
+        font-size: 13px;
+        width: 90%;
     }
-    .double {
-        margin-right: -15px
+
+    #hebergement .first span {
+        font-size: 0.6em;
     }
+
+    #populaires .second img {
+        height: 115px;
+        width: 30%;
+    }
+
+
+
+    #activites {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #activites .vertical.first {
+        order: 1;
+        height: auto;
+        width: 45%;
+    }
+
+    #activites .vertical.second {
+        order: 2;
+        width: 45%;
+    }
+
+    #activites .vertical img {
+        width: 100%;
+    }
+
+    #activites .double.first {
+        order: 3;
+        display: flex;
+    }
+
+    #activites .double a{
+        width: 45%;
+    }
+
+    #activites .double img {
+        width: 100%;
+    }
+
+    #activites .double.second {
+        order: 4;
+        display: flex;
+    }
+
     footer {
         width: 98%;
     }

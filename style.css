@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Raleway-VariableFont_wght';
-    url('Raleway-VariableFont_wght.ttf') format('truetype'),
+    src :url('Raleway-VariableFont_wght.ttf') format('truetype'),
     url('Raleway-VariableFont_wght.svg') format('svg');
 }
 
@@ -84,7 +84,7 @@ header {
 }
 
 label {
-    border:1px solid #F2F2F2;
+    
     padding: 8px;
     border-radius: 10px 0 0 10px;
     background-color: #F2F2F2;
@@ -191,7 +191,6 @@ p {
 #filtres .fas {
     color : #0065FC;
     padding: 8px 7.5px 7.5px 7.5px;
-    border:1px solid #DEEBFF;
     border-radius: 100%;
     background: #DEEBFF;
     margin-right: 5px;
